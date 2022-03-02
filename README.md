@@ -14,14 +14,16 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1. **Think about how to validate each of your features according to a Definition of Done**
 1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
+![wireframe for about us app](/assets/wireframe.png 'wireframe for about us app')
+
 1. Create a data.js file and add some people to it
-2. Add select tag inside index.html and options for drop down menu
-3. Add div container that contains our personal info
-4. Import data into app.js file
+1. Add select tag inside index.html and options for drop down menu
+1. Add div container that contains our personal info
+1. Import data into app.js file
     - Inside grab our elements from index.html
-5. Write event listener for select element
-6. Write function that renders a person
-7. Conditionally render person based on selection
+1. Write event listener for select element
+1. Write function that renders a person
+1. Conditionally render person based on selection
 
 ## Rubric
 
@@ -30,7 +32,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 | Dropdown menu that gives us option on which user to render to the page              |   1 |
 | Render person function                                                              |   2 |
 | Theme/styling depending on which user a different style is rendered.                |   1 |
-| Info (name, pronouns, favorite place, hobbies)             |   1 |
+| Info (name, pronouns, favorite place, hobbies)                                      |   1 |
 | README file with plan                                                               |   2 |
 | Repo has a commit history with multiple commits and commit messages that make sense |   1 |
 | Link in About section of repo to deployed site in Netlify                           |   1 |
