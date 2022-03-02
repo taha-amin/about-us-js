@@ -3,6 +3,8 @@ import { people } from './data.js';
 //console.log(people, 'people');
 
 // grab DOM elements
+const selectEl = document.querySelector('.select');
+console.log(selectEl);
 
 // set event listeners 
     // get user input
