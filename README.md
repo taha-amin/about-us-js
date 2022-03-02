@@ -14,13 +14,24 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1. **Think about how to validate each of your features according to a Definition of Done**
 1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
-Additional considerations:
+1. Create a data.js file and add some people to it
+2. Add select tag inside index.html and options for drop down menu
+3. Add div container that contains our personal info
+4. Import data into app.js file
+    - Inside grab our elements from index.html
+5. Write event listener for select element
+6. Write function that renders a person
+7. Conditionally render person based on selection
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+## Rubric
+
+| App should include . . .                                                            |  10 |
+| :---------------------------------------------------------------------------------- | --: |
+| Dropdown menu that gives us option on which user to render to the page              |   1 |
+| Render person function                                                              |   2 |
+| Theme/styling depending on which user a different style is rendered.                |   1 |
+| Info (name, pronouns, favorite place, hobbies)             |   1 |
+| README file with plan                                                               |   2 |
+| Repo has a commit history with multiple commits and commit messages that make sense |   1 |
+| Link in About section of repo to deployed site in Netlify                           |   1 |
+| Work is done on a dev branch and a PR link is submitted to Canvas                   |   1 |
