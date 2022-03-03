@@ -4,7 +4,23 @@ import { people } from './data.js';
 
 // grab DOM elements
 const selectEl = document.querySelector('.select');
-console.log(selectEl);
+//console.log(selectEl);
+
+selectEl.addEventListener('change', (e) => {
+    //console.log('user click');
+});
+
+function renderPerson(index) {
+    nameEl.textContent = 'Name: ' + people[index].name;
+    pronounsEl.textContent = 'Pronouns: ' + people[index].pronouns;
+    favPlaceEl.textContent = 'Favorite Place: ' + people[index].favorite_place;
+
+    for (let hobby of people[index].hobbies) {
+        const li = document.createElement('li');
+        li.textContent = hobby;
+        hobbiesEl.appendChild(li);
+    }
+}
 
 // set event listeners 
     // get user input
