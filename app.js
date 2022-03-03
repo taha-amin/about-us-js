@@ -3,8 +3,14 @@ import { people } from './data.js';
 //console.log(people, 'people');
 
 // grab DOM elements
+//to grab by class: document.querySelector()
+//to grab by id: document.getElementById()
+
 const selectEl = document.querySelector('.select');
-//console.log(selectEl);
+const nameEl = document.getElementById('name');
+const pronounsEl = document.getElementById('pronouns');
+const favPlaceEl = document.querySelector('favoritePlace');
+const hobbiesEl = document.querySelector('hobbies');
 
 selectEl.addEventListener('change', (e) => {
     //console.log('user click');
@@ -21,6 +27,8 @@ function renderPerson(index) {
         hobbiesEl.appendChild(li);
     }
 }
+
+renderPerson(0);
 
 // set event listeners 
     // get user input
