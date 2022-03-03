@@ -6,13 +6,23 @@ import { people } from './data.js';
 //to grab by class: document.querySelector()
 //to grab by id: document.getElementById()
 
+const contain = document.querySelector('.contain');
 const selectEl = document.querySelector('.select');
 const nameEl = document.getElementById('name');
 const pronounsEl = document.getElementById('pronouns');
-const favPlaceEl = document.querySelector('favoritePlace');
-const hobbiesEl = document.querySelector('hobbies');
+const favPlaceEl = document.querySelector('.favoritePlace');
+const hobbiesEl = document.querySelector('.hobbies');
 
 selectEl.addEventListener('change', (e) => {
+    const selected = e.target.value;
+    hobbiesEl.innerHTML = ' ';
+    contain.classList.remove('Mohamed', 'Pete');
+
+    if (selected === 'one') {
+        renderPerson(0);
+    } else {
+        renderPerson(1);
+    }
     //console.log('user click');
 });
 
