@@ -16,7 +16,7 @@ const hobbiesEl = document.querySelector('.hobbies');
 selectEl.addEventListener('change', (e) => {
     const selected = e.target.value;
     hobbiesEl.innerHTML = ' ';
-    contain.classList.remove('Mohamed', 'Pete');
+    contain.classList.remove('Mohamed', 'Pete', 'hidden');
 
     if (selected === 'one') {
         renderPerson(0);
@@ -27,6 +27,7 @@ selectEl.addEventListener('change', (e) => {
 });
 
 function renderPerson(index) {
+    contain.classList.add(`${people[index].name}`);
     nameEl.textContent = 'Name: ' + people[index].name;
     pronounsEl.textContent = 'Pronouns: ' + people[index].pronouns;
     favPlaceEl.textContent = 'Favorite Place: ' + people[index].favorite_place;
@@ -38,7 +39,7 @@ function renderPerson(index) {
     }
 }
 
-renderPerson(0);
+//renderPerson(0);
 
 // set event listeners 
     // get user input
